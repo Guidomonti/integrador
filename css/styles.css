@@ -76,7 +76,6 @@ body {
 .item {
     text-align: center;
     width: 100%;
-    padding: 1rem 0;
     display: none;
 }
 /* fin header */
@@ -173,7 +172,7 @@ body {
 .description-section {
     padding: 5rem 0;
     width: 100%;
-    background: var(--color5);
+    background: linear-gradient(to top, #232526, #414345);
 }
 
 .description-section h2 {
@@ -195,6 +194,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 3px;
+    box-shadow: 10px 10px 5px -6px rgba(224,225,230,0.31);
     margin: 3rem;
     height: 50vh;
     width: 42vh;
@@ -243,7 +244,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 220px;
-    padding: 30px ;
+    padding: 4rem ;
     grid-gap: 1rem;
     background-color: var(--color3);
 }
@@ -282,12 +283,17 @@ body {
     grid-column-start: span 3;
 }
 
+/* .item-galery .item-img img:nth-child(6) {
+    object-position: -20px;
+} */
+
 /* Fin section 4 galery */
 
 
 /* Section 5 contact */
 .contact-container {
     width: 100%;
+    min-height: 100vh;
     background-color: var(--color5);
 }
 
@@ -313,12 +319,14 @@ body {
 }
 
 .form-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     border-radius: 2px;
-    padding: 20px;
+    padding: 2.5rem;
 }
 
-.form {
-    width: 100%;
+.form { 
     border-radius: 5px;
     padding: 2rem;
     background-color: var(--color2);
@@ -382,7 +390,137 @@ input[type=submit]:hover {
     color: var(--color1);
 }
 
+/* Fin footer */
+
+/* login */
+.login-main{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(.././assets/img/login-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login{
+    height: 500px;
+    width: 400px;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+}
+
+.form-login h2{
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color6);
+}
+
+.input-line{
+    height: 2px;
+    width: 20vh;
+    background-color: var(--color1);
+    margin: 20px 0 35px 0;
+}
+
+.form-login input{
+    height: 35px;
+    width: 50vh;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #302e2c;
+    background-color: var(--color2);
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+
+.form-login button{
+    width: 15vh;
+    height: 4vh;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: var(--color1);
+    color: var(--color5);
+    cursor: pointer;
+}
+
+.form-login button:hover{
+    background-color: var(--color5);
+    color:var(--color2);
+    transition: all 0.4s linear;
+}
+
+.form-login a{
+    color: var(--color6);
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.form-login p{
+    color: var(--color6);
+}
+
+/* Fin login */
+
+
 /* media querys */
+
+@media (min-width:768px) {
+    /* Galery */
+    .section-galery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 300px;
+        padding: 4rem ;
+        grid-gap: 1rem;
+        background-color: var(--color3);
+    }
+    
+    .item-img {
+        object-fit: cover;
+        border-radius: 3px;
+    }
+    
+    .item-galery:nth-child(1) {
+        grid-column-start: span 2;
+    }
+    
+    .item-galery:nth-child(3) {
+        grid-row-start: span 2;
+    }
+    
+    .item-galery:nth-child(4) {
+        grid-column-start: span 2;
+    }
+    
+    .item-galery:nth-child(5) {
+        grid-column: 3/4;
+    }
+    
+    .item-galery:nth-child(6) {
+        grid-column: 2/3 ;
+        grid-row: 3;
+    }
+    
+    .item-galery:nth-child(7) {
+        grid-column-start: span 2;
+    }
+    
+    .item-galery:nth-child(9) {
+        grid-column-start: span 3;
+    }
+}
+
+
 
 @media (min-width:1024px){
     /* header y nav */
@@ -396,7 +534,7 @@ input[type=submit]:hover {
         align-items: center;
         text-align: center;
         width: auto;
-        gap: 3rem;
+        gap: 2.5rem;
     }
 
     .item {
@@ -406,17 +544,17 @@ input[type=submit]:hover {
         justify-content: center;
     }
 
-    .item a {
+    .item a{
         color: var(--color1);
         font-size: 1.4rem;
         font-weight: 600;
-        padding: 4px 4px;
-        transition: all 0.3s linear;
+        padding: 4px 7px;
+        position: relative;
+        transition: .5s;
     }
 
     .item a:hover {
-        border-bottom: 1px solid #9e9ea3;
-        transition: all 0.3s ease;
+        color: var(--color6);
     }
 
     .login-nav {
@@ -427,6 +565,12 @@ input[type=submit]:hover {
     .register-nav {
         border: solid 1px #9e9ea3;
         border-radius: 5px;
+    }
+    
+    .register-nav:hover, .login-nav:hover {
+        background-color: var(--color1);
+        color: var(--color5);
+        transition: all 0.3s linear;
     }
 
     .menu {
@@ -487,6 +631,7 @@ input[type=submit]:hover {
 
     .container-card {
         flex-direction: row;
+        gap: 5rem;
     }
 
     .card {
@@ -494,4 +639,54 @@ input[type=submit]:hover {
         width: 45vh;
         margin: 4rem 1rem 0 1rem;
     }
+
+
+    /* Fin Section service */
+
+    /* Section galery */
+
+    .section-galery {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 400px;
+    }
+
+    .item-galery:nth-child(4) {
+        grid-column: 2/4;
+        grid-row: 2;
+    }
+
+    .item-galery:nth-child(5) {
+        grid-column: 1/3;
+        grid-row: 3;
+    }
+
+    .item-galery:nth-child(6) {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
+
+    /* Fin Section galery */
+
+    /* Section contact */
+
+    .contact-container {
+        display: flex;
+        height: auto;
+        width: 100%;
+    }
+
+    .contact-img {
+        width: 100%;
+    }
+
+    .contact-img img {
+        object-fit: cover;
+    }
+
+    .form-container {
+        width: 70%;
+        height: 100%;
+    }
+
 }
+
