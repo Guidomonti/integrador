@@ -195,9 +195,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 4rem 0;
+    margin: 3rem;
     height: 50vh;
-    width: 50vh;
+    width: 42vh;
 }
 
 .card:nth-child(1) {
