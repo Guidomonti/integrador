@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/logo-hry.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+
+<body>
+    <!-- Logo y Navbar -->
+    <header class="header">
+
+        <nav class="navbar">
+            <ul class="menu">
+                <li>
+                    <a href="#"><h1>HRY</h1></a>
+                </li>
+                <div class="container-items">
+                    <li class="item"><a href="#hero">Inicio</a></li>
+                    <li class="item"><a href="#about">Sobre Mí</a></li>
+                    <li class="item"><a href="#service">Servicios</a></li>
+                    <li class="item"><a href="#galery">Galería</a></li>
+                    <li class="item"><a href="#contact">Contacto</a></li>
+                    <li class="item"><a class="login-nav" href="#">Entrar</a></li>
+                    <li class="item"><a class="register-nav" href="#">Registrarse</a></li>
+                </div>
+                <div class="btn-nav">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </ul>
+        </nav>
+
+    </header> 
+    
+    <main>
+        <!-- Section 1 hero -->
+        <section class="hero-section" id="hero">  
+            <div class="hero-content">
+                <h2>Hernan Moreno</h2>
+                <p>Fotografías</p>
+                <div class="line-hero"></div>                         
+            </div>          
+        </section>
+
+        <!-- Section 2 about -->
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <h2>Sobre Mí</h2>
+                <div class="line-about"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Cupiditate debitis laboriosam ipsa soluta similique quas ab delectus, temporibus est voluptate ut maxime nostrum repudiandae accusamus in, amet assumenda fugit veritatis.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda quidem pariatur fugiat facilis magni error perspiciatis nesciunt delectus sapiente nulla iusto aliquid illo, excepturi repellat, necessitatibus accusantium? Corrupti, qui?</p>
+            </div>
+            <div class="about-img">
+                <img src="./assets/img/carrusel/HRY_8758.jpg" alt="">
+            </div>           
+        </section>
+        <!-- Section 3 service -->
+        <section class="description-section" id="service">
+            <h2>Servicios</h2>
+
+            <div class="container-card">
+
+                <div class="card">
+                    <h3>Servicio 1</h3>
+                    <p>Descripcion servicio</p>
+                </div>
+
+                <div class="card">
+                    <h3>Servicio 2</h3>
+                    <p>Descripcion servicio</p>
+                </div>
+
+                <div class="card">
+                    <h3>Servicio 3</h3>
+                    <p>Descripcion servicio</p>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Section 4 galery -->
+        <section class="section-galery" id="galery">            
+            <div class="item-galery"> 
+                <img src="./assets/img/galery/DSC_9106.jpg" alt="" class="item-img">
+            </div>
+            <div class="item-galery">  
+                <img src="./assets/img/galery/HRY_6494.jpg" alt="" class="item-img">
+            </div>
+            <div class="item-galery">  
+                <img src="./assets/img/galery/HRY_3892.jpg" alt="" class="item-img">
+            </div>
+            <div class="item-galery">  
+                <img src="./assets/img/galery/DSC_9259.jpg" alt="" class="item-img">
+            </div>
+            <div class="item-galery">  
+                <img src="./assets/img/galery/HRY_3908-2.jpg" alt="" class="item-img">
+            </div>
+            <div class="item-galery">  
+                <img src="./assets/img/galery/HRY_38952.jpg" alt="" class="item-img">
+            </div>
+            <div class="item-galery">  
+                <img src="./assets/img/galery/DSC_9202.jpg" alt="" class="item-img">
+            </div>
+            <div class="item-galery"> 
+                <img src="./assets/img/galery/HRY_6552.jpg" alt="" class="item-img">
+            </div>        
+            <div class="item-galery">
+                <img src="./assets/img/galery/DSC_9279.jpg" alt="" class="item-img">
+            </div>       
+        </section>
+
+        <!-- Section 5 contac -->
+        <section class="contact-container" id="contact">
+            <div class="contact-img">
+                <img src="./assets/img/galery/DSC_9265.jpg" alt="imagen-contact">
+            </div>
+            <div class="contact-text">
+                <h2>Contacto</h2>
+                <p>Podras contactarme ante cualquier duda o para que te pueda cotizar un servicio</p>
+            </div>
+
+            <div class="form-container">
+
+                <form class="form" action="#">
+                    
+                    <label for="fname">Nombre</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Ingresa tu nombre..">
+                    
+                    <label for="lname">Apellido</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Ingresa tu apellido..">
+                    
+                    <label for="country">País</label>
+                    <select id="country" name="country">
+                        <option value="ARG">Argentina</option>
+                        <option value="CH">Chile</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="PY">Paraguay</option>
+                    </select>
+                    
+                    <label for="ast">Asunto</label>
+                    <input type="text" id="ast" name="asunto">
+                    
+                    <label for="msj">Mensaje</label>
+                    <textarea id="msj" name="mensaje" placeholder="Escribe un mensaje" style="height:200px"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <div class="footer-container">
+        <footer class="footer">
+            <p>HRY Fotografías 2022 © - Todos los derechos reservados || </p>
+            <p>By <a href="#">Guido Monticelli</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
