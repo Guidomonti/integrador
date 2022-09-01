@@ -18,17 +18,17 @@
                 <li>
                     <a href="#"><h1>HRY</h1></a>
                 </li>
-                <div class="container-items">
+                <div id="active" class="container-items wrapper">
                     <li class="item"><a href="#hero">Inicio</a></li>
                     <li class="item"><a href="#about">Sobre Mí</a></li>
                     <li class="item"><a href="#service">Servicios</a></li>
                     <li class="item"><a href="#galery">Galería</a></li>
                     <li class="item"><a href="#contact">Contacto</a></li>
                     <li class="item"><a class="login-nav" href="./login.html">Entrar</a></li>
-                    <li class="item"><a class="register-nav" href="#">Registrarse</a></li>
+                    <li class="item"><a class="register-nav" href="./resgister.html">Registrarse</a></li>
                 </div>
                 <div class="btn-nav">
-                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                    <a href="#"><i class="fa-solid fa-bars menu-btn"></i></a>
                 </div>
             </ul>
         </nav>
@@ -47,16 +47,16 @@
 
         <!-- Section 2 about -->
         <section class="about-section" id="about">
+            <div class="about-img">
+                <img src="./assets/img/carrusel/HRY_8758.jpg" alt="">
+            </div>           
             <div class="about-content">
                 <h2>Sobre Mí</h2>
-                <div class="line-about"></div>
+                <div class="line-decoration-about"></div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  Cupiditate debitis laboriosam ipsa soluta similique quas ab delectus, temporibus est voluptate ut maxime nostrum repudiandae accusamus in, amet assumenda fugit veritatis.</p>
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus assumenda quidem pariatur fugiat facilis magni error perspiciatis nesciunt delectus sapiente nulla iusto aliquid illo, excepturi repellat, necessitatibus accusantium? Corrupti, qui?</p>
             </div>
-            <div class="about-img">
-                <img src="./assets/img/carrusel/HRY_8758.jpg" alt="">
-            </div>           
         </section>
         <!-- Section 3 service -->
         <section class="description-section" id="service">
@@ -115,15 +115,13 @@
 
         <!-- Section 5 contac -->
         <section class="contact-container" id="contact">
-
-            <div class="contact-img">
-                <img src="./assets/img/galery/DSC_9265.jpg" alt="imagen-contact">
-            </div>
+            
             
             <div class="form-container">
                 
                 <div class="contact-text">
                     <h2>Contacto</h2>
+                    <div class="line-decoration-contact"></div>
                     <p>Podras contactarme ante cualquier duda o para que te pueda cotizar un servicio</p>
                 </div>
                 
@@ -132,25 +130,21 @@
                     <label for="fname">Nombre</label>
                     <input type="text" id="fname" name="firstname" placeholder="Ingresa tu nombre..">
                     
-                    <label for="lname">Apellido</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Ingresa tu apellido..">
-                    
-                    <label for="country">País</label>
-                    <select id="country" name="country">
-                        <option value="ARG">Argentina</option>
-                        <option value="CH">Chile</option>
-                        <option value="UY">Uruguay</option>
-                        <option value="PY">Paraguay</option>
-                    </select>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu email">                    
                     
                     <label for="ast">Asunto</label>
                     <input type="text" id="ast" name="asunto">
                     
                     <label for="msj">Mensaje</label>
-                    <textarea id="msj" name="mensaje" placeholder="Escribe un mensaje" style="height:75px"></textarea>
+                    <textarea id="msj" name="mensaje" placeholder="Escribe tu mensaje aquí" style="height:75px"></textarea>
                     <input type="submit" value="Enviar">
                 </form>
 
+            </div>
+            
+            <div class="contact-img">
+                <img src="./assets/img/galery/DSC_9265.jpg" alt="imagen-contact">
             </div>
         </section>
     </main>
