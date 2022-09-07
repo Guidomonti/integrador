@@ -22,6 +22,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -37,6 +38,7 @@ body {
 /* Header */
 
 .header {
+    position: fixed;
     height: 80px;
     width: 100%;
     display: flex;
@@ -73,6 +75,11 @@ body {
     font-size: 1.5rem;
     color: var(--color1);
     cursor: pointer;
+}
+
+.navbar i:hover {
+    color: var(--color2);
+    transition: all 0.2s linear;
 }
 
 .navbar input {
@@ -146,7 +153,7 @@ body {
 
 .hero-content h2 {
     color: var(--color6);
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 900;
     letter-spacing: 1px;
 }
@@ -190,7 +197,7 @@ body {
 }
 
 .about-content h2 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     font-weight: 900;
     color: var(--color3);
     letter-spacing: 0.5px;
@@ -249,21 +256,21 @@ body {
 }
 
 .card:nth-child(1) {
-    background-image: url(../assets/img/galery/DSC_9106.jpg);
+    background-image: url(../assets/img/galery/274243003_1380908865708123_6968698058079338899_n.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .card:nth-child(2) {
-    background-image: url(../assets/img/galery/DSC_9202.jpg);
+    background-image: url(../assets/img/galery/203523482_4009362212475606_1627075373626124264_n.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .card:nth-child(3) {
-    background-image: url(../assets/img/galery/DSC_9267.jpg);
+    background-image: url(../assets/img/galery/casamiento.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -271,14 +278,15 @@ body {
 
 .card h3 {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 900;
     color: var(--color6);
+    letter-spacing: 1px;
 }
 
 .card p {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--color2);
+    color: var(--color6);
 }
 
 
@@ -394,7 +402,7 @@ body {
     color: var(--color1);
 }
 
-input[type=text], select, textarea {
+.input-contact, select, textarea {
     width: 100%;
     padding: 0.6rem;
     border: 1px solid var(--color3);
@@ -479,7 +487,7 @@ input[type=submit]:hover {
 
 .form-login{
     height: 500px;
-    width: 400px;
+    width: 350px;
     background: rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
@@ -489,6 +497,7 @@ input[type=submit]:hover {
 }
 
 .form-login h2{
+    padding: 1rem;
     font-size: 40px;
     font-weight: 700;
     color: var(--color6);
@@ -503,7 +512,7 @@ input[type=submit]:hover {
 
 .form-input-login {
     height: 35px;
-    width: 50vh;
+    width: 40vh;
     font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -511,6 +520,8 @@ input[type=submit]:hover {
     background-color: var(--color2);
     padding: 0 10px;
     margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid var(--color3);
 }
 
 .form-login button{
@@ -522,6 +533,7 @@ input[type=submit]:hover {
     background-color: var(--color1);
     color: var(--color5);
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .form-login button:hover{
@@ -556,9 +568,11 @@ input[type=submit]:hover {
     align-items: center;
 }
 .form-register{
+    width: 400px;
     background: rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 15px;
     border-radius: 10px;
@@ -567,10 +581,10 @@ input[type=submit]:hover {
 .form-container-register {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .container-text {
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -590,7 +604,7 @@ input[type=submit]:hover {
 
 .form-register input {
     height: 35px;
-    width: 50vh;
+    width: 40vh;
     font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -598,7 +612,55 @@ input[type=submit]:hover {
     background-color: var(--color2);
     padding: 0 10px;
     margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid var(--color3);
 }
+
+.form-register label {
+    color: var(--color2);
+    text-align: left;
+}
+
+.line-decoration-register {
+    height: 2px;
+    background-color: var(--color2);
+}
+
+.terms-signin {
+    margin: 1rem;
+}
+
+.terms-signin p {
+    color: var(--color2);
+    font-weight: 600;
+}
+
+.terms-signin a {
+    color: var(--color1);
+}
+
+.terms-signin a:hover {
+    color: #9696bb;
+}
+.register-btn {
+    width: 15vh;
+    height: 5vh;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: var(--color1);
+    color: var(--color5);
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.register-btn:hover {
+    background-color: var(--color5);
+    color:var(--color2);
+    transition: all 0.4s linear;
+}
+
 
 
 
@@ -660,8 +722,19 @@ input[type=submit]:hover {
 @media (min-width:1024px){
     /* header y nav */
 
-    .navbar ul {
+    .navbar .menu {
         transform: translateX(0%);
+        position: relative;
+        transition: none;
+        top: 0;
+        height: 0;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar i {
+        display: none;
     }
 
     /* fin header y nav */
@@ -714,14 +787,17 @@ input[type=submit]:hover {
     }
 
     .container-card {
+        padding: 3rem 1.3rem;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
         gap: 2.5rem;
     }
 
     .card {
         height: 45vh;
         width: 45vh;
-        margin: 4rem 1rem 0 1rem;
+        margin: 0 auto;
     }
 
 
