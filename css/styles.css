@@ -256,14 +256,14 @@ body {
 }
 
 .card:nth-child(1) {
-    background-image: url(../assets/img/galery/274243003_1380908865708123_6968698058079338899_n.jpg);
+    background-image: url(../assets/img/galery/deportes.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .card:nth-child(2) {
-    background-image: url(../assets/img/galery/203523482_4009362212475606_1627075373626124264_n.jpg);
+    background-image: url(../assets/img/galery/Gastro.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
